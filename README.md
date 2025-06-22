@@ -1,44 +1,87 @@
 # Smart-Light-Control-with-ESP32-and-Mobile-App
 A simple IoT project to control an LED using an ESP32 and the Blynk mobile app via Wi-Fi. Built for CodTech’s IoT Internship 2025 – Task 1: Smart Light Control.
-# Smart Light Control with ESP32 and Mobile App
+# 💡 Smart Light Control with ESP32 and Mobile App
 
-This project demonstrates how to control an LED using the ESP32 microcontroller and a mobile app via Wi-Fi using the Blynk IoT platform.
-
-## 🔧 Hardware Setup
-
-### Components:
-- ESP32 Dev Board
-- LED
-- 220Ω Resistor
-- Breadboard + Jumper Wires
-
-### Circuit Diagrams:
-
-#### Breadboard Setup
-![Breadboard Circuit](hardware/circuit_breadboard.png)
-
-#### Schematic
-![Schematic](hardware/circuit_diagram.png)
-
-## 💻 Software Setup
-
-1. Install Arduino IDE
-2. Add ESP32 board URL to Board Manager:
-   ```
-   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-   ```
-3. Install **Blynk Library**
-4. Upload the sketch from `firmware/Blynk_LED_Control.ino` to your ESP32
-5. Create a Blynk Project, add a Button widget for GPIO2
-
-## 📲 Mobile App
-
-Use the **Blynk IoT app** to control the LED from your phone.
-
-## ✅ Features
-- Real-time LED control via mobile
-- Wi-Fi connectivity using ESP32
+A simple IoT project to control an LED using an ESP32 and the Blynk mobile app via Wi-Fi.  
+Built as part of **CodTech’s IoT Internship 2025 – Task 1: Smart Light Control**.
 
 ---
 
-This is part of the **CodTech IoT Internship 2025 - Task 1**.
+## 📦 Project Overview
+
+This project demonstrates wireless LED control using:
+- ✅ ESP32 microcontroller  
+- ✅ Blynk IoT platform  
+- ✅ Mobile app interface  
+
+---
+
+## 🔧 Hardware Setup
+
+### 🧩 Components Required
+- ESP32 Dev Board  
+- LED (any color)  
+- 220Ω Resistor  
+- Breadboard  
+- Jumper Wires  
+
+### 🔌 Circuit Diagrams
+
+#### 🖼️ Schematic
+![Circuit Diagram](hardware/circuit_diagram.png)
+
+#### 🔋 Breadboard Setup
+![Breadboard Setup](hardware/breadboard_setup.png)
+
+---
+
+## 💻 Software Setup
+
+1. **Install Arduino IDE**
+
+2. **Add ESP32 board to Board Manager**  
+   Paste this URL into **File → Preferences → Additional Board URLs**:
+   
+   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+   
+3. **Install the Blynk Library**  
+Go to **Sketch → Include Library → Manage Libraries** → Search for `Blynk` and install it.
+
+4. **Upload Code**  
+Open the file:  
+
+Replace:
+- `BLYNK_AUTH_TOKEN`
+- `Wi-Fi SSID`
+- `Wi-Fi Password`  
+with your actual credentials.
+
+5. **Configure Blynk App**
+- Create a new project in the Blynk IoT mobile app.
+- Add a **Button widget**.
+- Set it to **Digital → GPIO2**.
+- Set the **Mode** to **Switch** (not Push).
+
+---
+
+## 📱 Mobile App (Blynk IoT)
+
+- Download the **Blynk IoT App** from the [Play Store](https://play.google.com/store/apps/details?id=cloud.blynk) or [App Store](https://apps.apple.com/us/app/blynk-iot/id1551043569)
+- Log in or sign up
+- Create a new project and get your **auth token** via email
+- Use this token in your Arduino code
+- Control your LED in real-time!
+
+---
+
+## ✅ Features
+
+- 🔄 Real-time LED control via smartphone  
+- 📶 Wireless connectivity with ESP32  
+- 📲 Simple mobile interface using Blynk  
+
+---
+
+## 📁 Project Structure
+
