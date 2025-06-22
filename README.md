@@ -85,3 +85,31 @@ with your actual credentials.
 
 ## 📁 Project Structure
 
+Smart-Light-Control/
+├── hardware/
+│ ├── breadboard_setup.png
+│ └── circuit_diagram.png
+├── firmware/
+│ └── Blynk_LED_Control.ino
+├── .gitignore
+├── .gitattributes
+├── LICENSE
+└── README.md
+
+
+---
+
+## 📌 Notes
+
+- Make sure the LED is connected with the correct polarity (long leg = +).
+- Use a 220Ω resistor in series with the LED to prevent burning it out.
+- The ESP32 and your mobile device must be on the **same Wi-Fi network**.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
