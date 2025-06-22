@@ -1,0 +1,41 @@
+# Compiled object files
+*.o
+*.a
+*.so
+
+# Arduino build files
+*.bin
+*.elf
+*.hex
+*.map
+*.eep
+*.srec
+
+# Build folders
+build/
+*.d
+*.dep
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Arduino IDE specific
+*.ino.*
+sketches/
+
+# VSCode settings (optional)
+.vscode/
+
+# Python cache (if any)
+__pycache__/
+*.pyc
+
+# Sensitive files (credentials etc.)
+secrets.h
+wifi_config.h
